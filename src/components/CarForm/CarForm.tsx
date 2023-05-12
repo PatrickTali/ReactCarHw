@@ -5,7 +5,7 @@ import { Button } from '@mui/material';
 import { chooseMake, chooseModel, choosePrice, chooseYear, chooseVin} from '../../redux/slices/rootSlice';
 import { Input } from '../sharedComponents/Input';
 import { serverCalls } from '../../api';
-import { useGetData } from '../../custom-hooks';
+//import { useGetData } from '../../custom-hooks';
 
 interface CarFormProps {
     id?:string;
@@ -20,7 +20,7 @@ interface CarState {
 export const CarForm = (props:CarFormProps) => {
 
     const dispatch = useDispatch();
-    //let { CarData, getData } = useGetData();
+    //let { carData, getData } = useGetData();
     const store = useStore()
     const name = useSelector<CarState>(state => state.name)
     const { register, handleSubmit } = useForm({})

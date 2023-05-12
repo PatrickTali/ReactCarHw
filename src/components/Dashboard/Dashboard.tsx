@@ -170,7 +170,7 @@ export const Dashboard = () => {
         <Box
           sx={myStyles.drawerHeader}>
           <IconButton onClick={handleDrawerClose}>
-            
+          {theme.direction === 'ltr' ? <ChevronLeft /> : <ChevronRight/>}
           </IconButton>
         </Box>
         <Divider />
